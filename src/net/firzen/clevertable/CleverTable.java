@@ -77,7 +77,7 @@ public class CleverTable {
 	}
 
 	public void setTypes(Class<?> ... types) {
-		this.types = getModificableList(types);
+		this.types = getModifiableList(types);
 	}
 	
 	public int getColumnCount() {
@@ -241,7 +241,7 @@ public class CleverTable {
 	// Private methods
 	// -------------------------------------------------------------------------
 
-	private List<Class<?>> getModificableList(Class<?>[] array) {
+	private List<Class<?>> getModifiableList(Class<?>[] array) {
 		List<Class<?>> output = new ArrayList<Class<?>>();
 		int size = array.length;
 		for(int i = 0; i < size; i++) {
